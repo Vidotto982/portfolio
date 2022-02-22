@@ -1,0 +1,31 @@
+<mat-drawer-container class="container-all" >
+  <mat-drawer #drawer class="slide-open" mode="side">
+    <div class="container-profile">
+      <div class="networks">
+        <a href="https://www.linkedin.com/in/francisco-leonel-vidotto/">
+          <button class="but-network but-linkedin" >
+            <img class="img-network" src="assets/multimedia/linkedin.png">
+          </button>
+        </a>
+        <a href="https://github.com/Vidotto982">
+          <button class="but-network but-github">
+            <img class="img-network" src="assets/multimedia/github.png">
+          </button>
+        </a>
+        <a href="mailto:vidotto982@gmail.com">
+          <button class="but-network but-contact ">
+            <img class="img-network" src="assets/multimedia/contact.png">
+          </button>
+        </a>
+      </div>
+    </div>
+  </mat-drawer>
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <div class="initial-profile">
+    <img class="img-profile" src="assets/multimedia/img-profile.png">
+  </div>
+</mat-drawer-container>
