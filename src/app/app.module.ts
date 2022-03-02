@@ -8,14 +8,13 @@ import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatCheckboxModule } from "@angular/material/checkbox";
 import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
-import { FormContactComponent } from './form-contact/form-contact.component';
+import {MatCardModule} from "@angular/material/card";
 
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
-    FormContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,6 +24,7 @@ import { FormContactComponent } from './form-contact/form-contact.component';
     MatCheckboxModule,
     MatButtonModule,
     MatIconModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

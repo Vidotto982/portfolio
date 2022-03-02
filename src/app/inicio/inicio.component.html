@@ -1,6 +1,50 @@
 <mat-drawer-container class="container-all" >
-  <mat-drawer #drawer class="slide-open" mode="side">
-    <div class="container-profile">
+  <mat-drawer #drawer class="slide-open slide-perfil" mode="side">
+    <div class="div-proyect">
+      <div class="title-proyects">
+      <span class="span-proyects">Repositorios de proyectos  </span>
+      <h3 class="span-proyects">en Github</h3>
+      </div>
+      <mat-card class="card-proyects">
+        <div>
+        <h4> Seminario de Angular</h4>
+        <a href="https://github.com/Vidotto982/Angular-app">
+        <button class="but-proyects"  >
+          <img class="img-proyects" src="assets/multimedia/icon-carrito.png">
+        </button>
+      </a>
+      </div>
+      </mat-card>
+      <mat-card class="card-proyects" >
+      <div >
+        <h2> Proyecto con JS</h2>
+        <h5> en colaboración</h5>
+        <a href="https://github.com/Vidotto982/Angular-app">
+          <button class="but-proyects"  >
+            <img class="img-proyects" src="assets/multimedia/icon-js.png">
+          </button>
+        </a>
+      </div>
+      </mat-card>
+      <mat-card class="card-proyects ">
+      <div>
+        <h2> Proyecto de Php </h2>
+        <h5> en colaboración </h5>
+        <a href="https://github.com/Vidotto982/Angular-app">
+          <button class="but-proyects"  >
+            <img class="img-proyects" src="assets/multimedia/icon-php.png">
+          </button>
+        </a>
+      </div>
+        </mat-card>
+        </div>
+    <div class="container-networks">
+      <mat-card>
+        <div class="title-proyects">
+          <span class="span-proyects">Links de mis  </span>
+          <h3 class="span-proyects">Redes</h3>
+        </div>
+      </mat-card>
       <div class="networks">
         <a href="https://www.linkedin.com/in/francisco-leonel-vidotto/">
           <button class="but-network but-linkedin" >
@@ -20,12 +64,12 @@
       </div>
     </div>
   </mat-drawer>
-  <div class="example-sidenav-content">
+      <div class="example-sidenav-content">
     <button type="button" mat-button (click)="drawer.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
   </div>
-  <div class="initial-profile">
+        <div class="initial-profile">
     <img class="img-profile" src="assets/multimedia/img-profile.png">
   </div>
 </mat-drawer-container>
